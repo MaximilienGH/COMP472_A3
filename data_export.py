@@ -19,7 +19,7 @@ def create_evaluation_file(test_df, clf, vocabulary):
     output_file = f"Output_Files/eval_NB-BOW-{vocabulary}.txt"
     with open(output_file, 'w') as file_object:
         line1 = "{:.4f}".format(clf.get_accuracy()) + "\n"
-        line2 = "{:.4f}".format(clf.get_precision("yes")) + "  " + "{:.4f}".format(clf.get_precision("yes")) + "\n"
+        line2 = "{:.4f}".format(clf.get_precision("yes")) + "  " + "{:.4f}".format(clf.get_precision("no")) + "\n"
         line3 = "{:.4f}".format(clf.get_recall("yes")) + "  " + "{:.4f}".format(clf.get_recall("no")) + "\n"
         line4 = "{:.4f}".format(clf.get_f1("yes")) + "  " + "{:.4f}".format(clf.get_f1("no")) + "\n" 
         file_object.write(line1 + line2 + line3 + line4)
