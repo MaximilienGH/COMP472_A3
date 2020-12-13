@@ -1,5 +1,5 @@
 """
-File name:     driver.py
+File name:     main.py
 Authors:       Maximilien Fathi
 Date:          December 13, 2020
 Description:   Driver file used to run the whole program.
