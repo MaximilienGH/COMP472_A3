@@ -2,11 +2,11 @@
 File name:     data_export.py
 Authors:       Maximilien Fathi
 Date:          December 13, 2020
-Description:   
+Description:   Code used for the creation of trace files and evaluation files.
 """
 
 def create_trace_file(test_df, clf, vocabulary):
-    """Generates a trace file for a model"""
+    """Generates a trace file for a model."""
     output_file = f"Output_Files/trace_NB-BOW-{vocabulary}.txt"
     with open(output_file, 'w') as file_object:
         for index, row in test_df.iterrows():
@@ -15,7 +15,7 @@ def create_trace_file(test_df, clf, vocabulary):
                               + "  " + row[2] + "  " + results[2] + "\n")
             
 def create_evaluation_file(test_df, clf, vocabulary):
-    """Generates an evaluation file for a model"""
+    """Generates an evaluation file for a model."""
     output_file = f"Output_Files/eval_NB-BOW-{vocabulary}.txt"
     with open(output_file, 'w') as file_object:
         line1 = "{:.4f}".format(clf.get_accuracy()) + "\n"
