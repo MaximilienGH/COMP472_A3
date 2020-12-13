@@ -27,6 +27,6 @@ https://github.com/MaximilienGH/COMP472_A3
 4. Run it
 
 ## Libraries used
-* colletions
+* collections
 * math
 * pandas
