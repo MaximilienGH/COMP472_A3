@@ -22,7 +22,7 @@ def run_model(model, model_type):
     model.count_words()
     model.create_probabilities_dict()
     end = time.perf_counter()
-    print(f"Time for OV model {end - start:0.4f} seconds")
+    print(f"Time for {model_type} model {end - start:0.4f} seconds")
     data_export.create_trace_file(test_df, model, model_type)
     data_export.create_evaluation_file(test_df, model, model_type)
 
