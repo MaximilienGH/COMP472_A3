@@ -30,3 +30,4 @@ https://github.com/MaximilienGH/COMP472_A3
 * collections
 * math
 * pandas
+* time
