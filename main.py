@@ -11,7 +11,7 @@ from FV_model import FV_model
 import pandas as pd
 import time
 
-train_df = pd.read_csv("Input_Files/covid_training.tsv", sep='\t') # , header=None
+train_df = pd.read_csv("Input_Files/covid_training.tsv", sep='\t')
 test_df = pd.read_csv("Input_Files/covid_test_public.tsv", sep='\t', header=None)
 
 def run_model(model, model_type):
